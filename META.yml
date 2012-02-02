@@ -3,13 +3,14 @@ abstract: 'An ORM for the published CPANTS SQLite database'
 author:
   - 'Adam Kennedy'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.62
   LWP::Online: 1.07
   Test::More: 0.42
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.62
 distribution_type: module
-generated_by: 'Module::Install version 0.85'
+dynamic_config: 0
+generated_by: 'Module::Install version 1.04'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,11 +21,14 @@ no_index:
   directory:
     - inc
     - t
+    - xt
 requires:
-  ORLite::Mirror: 1.12
+  ORLite: 1.52
+  ORLite::Mirror: 1.22
+  Params::Util: 0.38
   perl: 5.8.5
 resources:
   ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/ORDB-CPANTS
   license: http://dev.perl.org/licenses/
   repository: http://svn.ali.as/cpan/trunk/ORDB-CPANTS
-version: 0.04
+version: 0.05
